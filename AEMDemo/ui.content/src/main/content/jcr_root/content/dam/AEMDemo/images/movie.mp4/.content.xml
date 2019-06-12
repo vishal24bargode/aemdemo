@@ -6,14 +6,17 @@
     <jcr:content
         dam:assetState="processed"
         dam:relativePath="AEMDemo/images/movie.mp4"
-        jcr:lastModified="{Date}2019-03-20T17:51:00.768+08:00"
+        jcr:lastModified="{Date}2019-04-10T00:12:51.351+08:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
-            dam:extracted="{Date}2019-03-20T17:51:00.106+08:00"
+            dam:extracted="{Date}2019-04-10T00:12:51.063+08:00"
             dam:sha1="c90b44a96ed080c1a6c8ce8888a40a5aaaa7e7ca"
             dam:size="{Long}318465"
             dc:format="video/mp4"
+            dc:modified="{Date}2019-04-10T00:12:51.351+08:00"
+            jcr:lastModified="{Date}2019-04-10T00:12:51.351+08:00"
+            jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
             xmp:CreateDate="{Date}2010-05-11T10:32:06.000Z"

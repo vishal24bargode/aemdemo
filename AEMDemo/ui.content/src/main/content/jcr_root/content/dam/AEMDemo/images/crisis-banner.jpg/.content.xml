@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-    jcr:mixinTypes="[mix:referenceable]"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
     jcr:primaryType="dam:Asset"
     jcr:uuid="da7a4e71-4089-4d7b-b4c5-881de06808a0">
     <jcr:content
+        cq:name="crisis-banner.jpg"
+        cq:parentPath="/content/dam/AEMDemo/images"
         dam:assetState="processed"
         dam:relativePath="AEMDemo/images/crisis-banner.jpg"
-        jcr:lastModified="{Date}2019-03-20T17:50:55.932+08:00"
+        jcr:lastModified="{Date}2019-04-10T00:12:48.671+08:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}24"
-            dam:extracted="{Date}2019-03-20T17:50:55.055+08:00"
+            dam:extracted="{Date}2019-04-10T00:12:48.467+08:00"
             dam:Fileformat="JPEG"
             dam:MIMEtype="image/jpeg"
             dam:Numberofimages="{Long}1"
@@ -21,9 +24,12 @@
             dam:Physicalwidthindpi="{Long}-1"
             dam:Physicalwidthininches="{Decimal}-1.0"
             dam:Progressive="no"
-            dam:sha1="be8039a80be95aa79449b8ae146dfda1ce82a0b0"
-            dam:size="{Long}191931"
+            dam:sha1="5188633935c96e14940ea2de2f20083a49679ecb"
+            dam:size="{Long}194614"
             dc:format="image/jpeg"
+            dc:modified="{Date}2019-04-10T00:12:48.232+08:00"
+            jcr:lastModified="{Date}2019-04-10T00:12:48.232+08:00"
+            jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
             tiff:ImageLength="{Long}405"

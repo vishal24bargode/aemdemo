@@ -6,12 +6,12 @@
     <jcr:content
         dam:assetState="processed"
         dam:relativePath="AEMDemo/images/search-btn.gif"
-        jcr:lastModified="{Date}2019-03-20T17:51:02.775+08:00"
+        jcr:lastModified="{Date}2019-04-10T00:12:47.049+08:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}6"
-            dam:extracted="{Date}2019-03-20T17:51:02.251+08:00"
+            dam:extracted="{Date}2019-04-10T00:12:40.602+08:00"
             dam:Fileformat="GIF"
             dam:MIMEtype="image/gif"
             dam:Numberofimages="{Long}1"
@@ -24,6 +24,9 @@
             dam:sha1="5dcefa768550a68fbc84c23bd6886eb628bcd13d"
             dam:size="{Long}1443"
             dc:format="image/gif"
+            dc:modified="{Date}2019-04-10T00:12:47.049+08:00"
+            jcr:lastModified="{Date}2019-04-10T00:12:47.049+08:00"
+            jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
             tiff:ImageLength="{Long}18"
