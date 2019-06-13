@@ -3,5 +3,5 @@
     jcr:description="AEMDemo Header Component"
     jcr:primaryType="cq:Component"
     jcr:title="AEMDemo Header"
-    sling:resourceSuperType="core/wcm/components/page/v1/page"
+    sling:resourceSuperType="AEMDemo/components/structure/page"
     componentGroup="AEMDemo.Structure"/>

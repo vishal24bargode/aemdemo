@@ -39,6 +39,15 @@
                         components="[group:AEMDemo.Removable]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_22914872741178>
+                    <policy_19750143257944
+                        jcr:lastModified="{Date}2019-06-13T16:29:09.585+08:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="landingpage content"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:AEMDemo.Removable,group:AEMDemo.Structure]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_19750143257944>
                 </responsivegrid>
             </components>
         </foundation>
@@ -67,6 +76,7 @@
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_1553069631302>
                 </page>
+                <footer jcr:primaryType="nt:unstructured"/>
             </structure>
             <content jcr:primaryType="nt:unstructured">
                 <image jcr:primaryType="nt:unstructured"/>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v1.editor,cq.wcm.msm.properties,granite.contexthub.configuration]"
+    helpPath="https://www.adobe.com/go/aem_cmp_page_v1"
+    mode="edit">
+    <content
+        granite:class="cq-dialog-content-page"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                granite:class="cq-siteadmin-admin-properties-tabs"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                size="L">
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Page Name"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Page Title"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Title"
+                                                name="./jcr:title"
+                                                renderReadOnly="{Boolean}true"
+                                                required="{Boolean}true">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="jcr:title"/>
+                                            </title>
+                                            <pagename
+                                                cq:hideOnEdit="{Boolean}true"
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Name"
+                                                name="pageName"
+                                                validation="admin.pagename"/>
+                                        </items>
+                                    </title>
+                                </items>
+                            </column>
+                        </items>
+                    </basic>
+                    <advanced
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Advanced"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <section1
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Settings"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <language
+                                                granite:class="language"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                emptyText="Select"
+                                                fieldLabel="Language"
+                                                name="./jcr:language"
+                                                renderReadOnly="{Boolean}true"
+                                                translateOptions="{Boolean}true">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="jcr:language"/>
+                                                <datasource
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/common/datasources/languages"
+                                                    addNone="{Boolean}true"/>
+                                            </language>
+                                            <isLanguageRoot
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Must be checked if page is the root of a language copy."
+                                                name="./cq:isLanguageRoot"
+                                                renderReadOnly="{Boolean}true"
+                                                text="Language Root"
+                                                value="true">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="cq:isLanguageRoot"/>
+                                            </isLanguageRoot>
+                                            <redirect
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Redirect"
+                                                name="./cq:redirectTarget"
+                                                rootPath="/content">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="cq:redirectPath"/>
+                                            </redirect>
+                                            <designs
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="wcm/designer/gui/components/designfield"
+                                                fieldLabel="Design"
+                                                name="./cq:designPath"
+                                                renderReadOnly="{Boolean}true">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="cq:designPath"/>
+                                            </designs>
+                                            <alias
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Alias"
+                                                name="./sling:alias"
+                                                renderReadOnly="{Boolean}true">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="sling:alias"/>
+                                            </alias>
+                                        </items>
+                                    </section1>
+                                    <configuration
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Configuration"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <cqConf
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/cloudconfig/components/admin/configpathbrowser"
+                                                emptyText="Select Configuration Path"
+                                                fieldLabel="Cloud Configuration">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="cq:conf"/>
+                                            </cqConf>
+                                        </items>
+                                    </configuration>
+                                    <export
+                                        cq:showOnCreate="{Boolean}false"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Export"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <exConfig
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Export Configuration"
+                                                name="./cq:exportTemplate"
+                                                optionLoader="cq.exportTemplate"
+                                                renderReadOnly="{Boolean}true"
+                                                rootPath="/etc/contentsync/templates">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="cq:exportTemplate"/>
+                                            </exConfig>
+                                        </items>
+                                    </export>
+                                </items>
+                            </column>
+                        </items>
+                    </advanced>
+                    <personalization
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/wcm/foundation/components/basicpage/v1/basicpage/tabs/personalization"/>
+                    <seometadata
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="SEO Meta Data"
+                        sling:hideResource="{Boolean}true"
+                        sling:orderBefore="cloudservices"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <section
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="SEO Meta Data"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Title"
+                                                name="./seoTitle_t"/>
+                                            <keyword
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Keywords"
+                                                name="./seoKeywords_t"/>
+                                            <desc
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                fieldLabel="Description"
+                                                name="./seoDesc_t"/>
+                                            <ogimage
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Social Share Image ( OG Image )"
+                                                name="./ogImage"
+                                                rootPath="/content/dam/digitalbank"/>
+                                        </items>
+                                    </section>
+                                </items>
+                            </column>
+                        </items>
+                    </seometadata>
+                    <permissions
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/wcm/core/content/sites/properties/tabs/permissions"/>
+                    <socialmedia
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Social Media"
+                        sling:hideResource="{Boolean}true"
+                        sling:orderBefore="cloudservices"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                    <cloudservices
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Cloud Services"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <configurations
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/cloudserviceconfigs/components/configurations">
+                                        <inheritFromParent
+                                            granite:class="js-cloudServices-Configs--inherit--checkbox"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            checked="false"
+                                            cq-msm-lockable="cq:cloudserviceconfigs"
+                                            deleteHint="{Boolean}false"
+                                            renderReadOnly="{Boolean}true"
+                                            renderReadOnlyUnchecked="{Boolean}true"
+                                            text="Inherited from {0}"/>
+                                    </configurations>
+                                </items>
+                            </column>
+                        </items>
+                    </cloudservices>
+                    <thumbnail
+                        cq:showOnCreate="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Thumbnail"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <thumbnail
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/common/wcm/pagethumbnail"
+                                        page="${empty param.item ? requestPathInfo.suffix : param.item}"
+                                        quiet="{Boolean}true">
+                                        <upload
+                                            granite:class="cq-wcm-fileupload"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fileupload"
+                                            async="{Boolean}true"
+                                            autoStart="{Boolean}false"
+                                            multiple="{Boolean}false"
+                                            name="./image/file.sftmp"
+                                            sizeLimit="100000000"
+                                            text="Upload Image"
+                                            uploadUrl="will_be_replaced">
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                cq-msm-lockable="./image"/>
+                                        </upload>
+                                        <preview
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="cq/gui/components/siteadmin/admin/pagepreview"/>
+                                    </thumbnail>
+                                </items>
+                            </column>
+                        </items>
+                    </thumbnail>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

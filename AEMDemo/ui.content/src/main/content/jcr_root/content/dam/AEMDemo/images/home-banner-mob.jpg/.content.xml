@@ -9,7 +9,7 @@
         cq:parentPath="/content/dam/AEMDemo/images"
         dam:assetState="processed"
         dam:relativePath="AEMDemo/images/home-banner-mob.jpg"
-        jcr:lastModified="{Date}2019-04-10T00:12:49.438+08:00"
+        jcr:lastModified="{Date}2019-06-11T18:40:16.005+08:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
@@ -24,7 +24,7 @@
             dam:Physicalwidthindpi="{Long}-1"
             dam:Physicalwidthininches="{Decimal}-1.0"
             dam:Progressive="no"
-            dam:sha1="4a0b5aaac20aeae4673bef9f8880aa377438fff4"
+            dam:sha1="6d66233177ea52ebab57fb52a37bbf5fd6b0add0"
             dam:size="{Long}109932"
             dc:format="image/jpeg"
             dc:modified="{Date}2019-04-10T00:12:49.371+08:00"

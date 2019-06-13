@@ -9,7 +9,7 @@
         cq:parentPath="/content/dam/AEMDemo/images"
         dam:assetState="processed"
         dam:relativePath="AEMDemo/images/crisis-1.jpg"
-        jcr:lastModified="{Date}2019-04-10T00:12:49.012+08:00"
+        jcr:lastModified="{Date}2019-06-11T18:40:19.389+08:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
@@ -24,7 +24,7 @@
             dam:Physicalwidthindpi="{Long}-1"
             dam:Physicalwidthininches="{Decimal}-1.0"
             dam:Progressive="no"
-            dam:sha1="865918a521dabe7a3551601f923d871a0bf4b449"
+            dam:sha1="5ef3f8a658a62d6c9d4b85dd4b4a67d8b6f1eeed"
             dam:size="{Long}158747"
             dc:format="image/jpeg"
             dc:modified="{Date}2019-04-10T00:12:48.956+08:00"

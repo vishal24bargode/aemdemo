@@ -9,7 +9,7 @@
         cq:parentPath="/content/dam/AEMDemo/images"
         dam:assetState="processed"
         dam:relativePath="AEMDemo/images/48x48.jpg"
-        jcr:lastModified="{Date}2019-04-10T00:12:52.227+08:00"
+        jcr:lastModified="{Date}2019-06-11T18:40:17.974+08:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
@@ -24,7 +24,7 @@
             dam:Physicalwidthindpi="{Long}-1"
             dam:Physicalwidthininches="{Decimal}-1.0"
             dam:Progressive="no"
-            dam:sha1="7b5ce4acafebb10379c9ef5214fbe841be671c0f"
+            dam:sha1="f3574fcbc458abc5a342b117d8ff7c0468dca960"
             dam:size="{Long}3017"
             dc:format="image/jpeg"
             dc:modified="{Date}2019-04-10T00:12:52.164+08:00"

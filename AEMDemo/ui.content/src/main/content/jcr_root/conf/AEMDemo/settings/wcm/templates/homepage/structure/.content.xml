@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
-        cq:lastModified="{Date}2019-06-10T14:52:24.385+08:00"
+        cq:lastModified="{Date}2019-06-13T15:34:45.058+08:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/AEMDemo/settings/wcm/templates/homepage"
         jcr:primaryType="cq:PageContent"
@@ -14,12 +14,42 @@
             <header
                 jcr:created="{Date}2019-03-20T17:04:49.394+08:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2019-06-10T14:52:24.382+08:00"
+                jcr:lastModified="{Date}2019-06-13T15:34:45.048+08:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
+                jcr:title="home"
                 sling:resourceType="AEMDemo/components/structure/header"
                 name="TEST"
-                value="test"/>
+                value="test">
+                <root jcr:primaryType="nt:unstructured">
+                    <outlet jcr:primaryType="nt:unstructured">
+                        <items jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                name="MENU1"
+                                value="menu1"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                name="MENU2"
+                                value="menu2"/>
+                        </items>
+                    </outlet>
+                </root>
+                <items jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        name="Press Release"
+                        value="press-release"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        name="In The News"
+                        value="news"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        name="Stories"
+                        value="stories"/>
+                </items>
+            </header>
             <responsivegrid
                 jcr:created="{Date}2019-03-20T17:05:01.038+08:00"
                 jcr:createdBy="admin"

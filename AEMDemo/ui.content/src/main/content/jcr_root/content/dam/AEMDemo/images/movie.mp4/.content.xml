@@ -6,7 +6,7 @@
     <jcr:content
         dam:assetState="processed"
         dam:relativePath="AEMDemo/images/movie.mp4"
-        jcr:lastModified="{Date}2019-04-10T00:12:51.351+08:00"
+        jcr:lastModified="{Date}2019-06-11T18:40:18.415+08:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
