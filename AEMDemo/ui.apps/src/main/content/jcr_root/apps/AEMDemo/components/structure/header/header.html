@@ -1,3 +1,4 @@
+<sly data-sly-use.header="com.aem.demo.core.controllers.HeaderController"/>
 <header>
     <div class="logo-box">
         <a href="../menu.html">
@@ -17,14 +18,19 @@
     </div>
     <div class="main-nav">
         <div class="container">
-            <ul class="main-nav">
-                <li data-sly-repeat="${currentPage.parent.listChildren}" >
+            <ul class="main-nav">              
+                <sly data-sly-list="${header.headerModels}">
+	                <li>
+	                	<a href="${item.value}.html">${item.name}</a>
+	                </li>
+    			</sly>		
+				
+				<!-- 
+				<li data-sly-repeat="${currentPage.parent.listChildren}" >
                 <a href="${item.path}.html">${item.pageTitle}</a>
                 <ul><li>TEST</li></ul>
                 </li>
-				
-				
-				<!-- <li><a href="">News</a></li>
+				<li><a href="">News</a></li>
                 <li><a href="">Stories</a></li>
                 <li><a href="">Others</a></li>
                 <li class="visible-xs"><a href="">Resources</a></li>
