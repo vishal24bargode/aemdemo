@@ -18,29 +18,37 @@ import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import com.aem.demo.core.models.HeaderModel;
 import com.aem.demo.core.constants.CommonConstant;
 
-@Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Model(adaptables = Resource.class, resourceType = {CommonConstant.HEADER_RESOURCE}, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class HeaderController{
 	
-	@ValueMapValue
+	@ChildResource
     @Default(values = "")
-	@Optional
-    private String name;
+    @Named("items")
+    private Resource header;
 	
-	@ValueMapValue
-    @Default(values = "")
-	@Optional
-    private String description;
+	private List<HeaderModel> headerModels = new ArrayList<>();
 		
 	@PostConstruct
 	protected void init() {
-		
+		if (header != null) {
+
+            final Iterator<Resource> iterator = header.listChildren();
+            iterator.forEachRemaining(item -> {
+                final HeaderModel headerModel = new HeaderModel();
+                headerModel.setName(item.getValueMap().get("name", String.class));
+                headerModel.setValue(item.getValueMap().get("value", String.class));
+               
+                headerModels.add(headerModel);
+            });
+
+        }
 	}
-	
-	public String getDescription() {
-        return description;
-    }
-	
-	public String getName() {
-        return name;
-    }	
+
+	public Resource getHeader() {
+		return header;
+	}
+
+	public List<HeaderModel> getHeaderModels() {
+		return headerModels;
+	}
 }
